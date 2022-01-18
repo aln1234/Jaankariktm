@@ -1,16 +1,12 @@
-import '../styles/globals.css'
+import React from 'react';
 
-import Layout from "../components/Layout"
-import Script from 'next/script'
+import '../styles/globals.scss';
+import { Layout } from '../components';
 import * as gtag from '../lib/gtag'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-
-
-
-function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+function MyApp({ Component, pageProps }) {const router = useRouter()
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -28,17 +24,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-  return (
-    <>
- 
-    <Layout>
-       <Component {...pageProps} />
 
-    </Layout></>
-    
-    
- 
-  )
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;
