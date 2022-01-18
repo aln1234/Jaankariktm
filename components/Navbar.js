@@ -28,7 +28,7 @@ function Navbar() {
                                     <div className="ml-10 items-baseline space-x-4">
                                      
                                         <Link
-                                        href="/home"
+                                        href="/"
                                      
                                       
                                         className="cursor-pointer  hover:bg-blue-300 font-body text-[#213D49] hover:text-white px-3 py-2 text-xl rounded-md font-medium"

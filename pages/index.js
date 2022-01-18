@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Banner from "../public/images/banner.jpg"
+import Hero from "../components/Hero"
+
 import Navbar from "../components/Navbar"
 export default function Home() {
   return (
@@ -11,11 +12,8 @@ export default function Home() {
       </Head>
 
       <main className="">
-        {/* <Image
-        src={Banner}
+      <Hero/>
       
-        /> */}
-     
 
 
        
