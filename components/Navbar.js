@@ -1,7 +1,7 @@
 import {Transition } from "@headlessui/react"
 import { useState } from "react"
 
-import Link from "next/Link"
+import Link from "next/link"
 
 
 function Navbar() {
