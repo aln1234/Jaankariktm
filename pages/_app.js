@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+
 import Layout from "../components/Layout"
 import Script from 'next/script'
 import * as gtag from '../lib/gtag'
@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
